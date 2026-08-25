@@ -13,7 +13,7 @@
       packages = eachSystem (pkgs: rec {
         texo = pkgs.stdenv.mkDerivation {
           pname = "texo";
-          version = "0.1.0";
+          version = "0.2.0";
           src = ./.;
 
           nativeBuildInputs = [ pkgs.ghc pkgs.makeWrapper ];
@@ -30,7 +30,7 @@
           '';
 
           meta = {
-            description = "echo for TeX: Unicode fallback or kitty-graphics rendering";
+            description = "echo for TeX: Unicode or kitty-graphics rendering";
             mainProgram = "texo";
           };
         };
