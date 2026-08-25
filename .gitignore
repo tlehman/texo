@@ -1,0 +1,5 @@
+texo
+*.hi
+*.o
+result
+texo.pdf
